@@ -1,0 +1,67 @@
+/*
+- White: hsl(0, 0%, 100%)
+- Light gray: hsl(212, 45%, 89%)
+- Grayish blue: hsl(220, 15%, 55%)
+- Dark blue: hsl(218, 44%, 22%)
+*/
+
+:root {
+    --white-color: hsl(0, 0%, 100%);
+    --light-gray-color: hsl(212, 45%, 89%);
+    --grayish-blue-color: hsl(220, 15%, 55%);
+    --dark-blue-color: hsl(218, 44%, 22%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-gray-color);
+    font-family: 'Outfit', sans-serif;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 330px;
+    height: 500px;
+    background-color: var(--white-color);
+    border-radius: 18px;
+    text-align: center;
+    padding: 1rem;
+    gap: 1.5rem;
+}
+
+#container img {
+    width: 100%;
+    height: 280px;
+    border-radius: 10px;
+    display: block;
+}
+
+#main-paragraph {
+    font-weight: 700;
+    color: var(--dark-blue-color);
+    width: 100%;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.32);
+    font-size: 20px;
+}
+
+#secondary-paragraph {
+    font-weight: 400;
+    color: var(--grayish-blue-color);
+    width: 100%;
+    font-size: 15px;
+}
+
